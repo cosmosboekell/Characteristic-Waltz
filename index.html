@@ -11,7 +11,7 @@
 /* ═══════════════════════════════════════════
    CHARACTERISTIC WALTZ: 1763–2026
    A Leibnizian-Mozartian combinatorial score
-   after Clarke's Nine Billion Names
+   after Clark's Nine Billion Names
    ═══════════════════════════════════════════ */
 
 :root {
@@ -75,7 +75,7 @@ h1 {
   line-height: 1.6;
 }
 
-/* Clarke counter */
+/* Clark counter */
 .clarke-block {
   background: rgba(255,255,255,0.03);
   border: 1px solid var(--card-border);
@@ -534,7 +534,7 @@ footer {
       <div class="subtitle">
         After W. A. Mozart's <em>Musikalisches Würfelspiel</em> &nbsp;·&nbsp;
         Towards Leibniz's <em>Characteristica Universalis</em> &nbsp;·&nbsp;
-        In the spirit of Clarke's enumeration
+        In the spirit of Clark's enumeration
       </div>
     </div>
 
@@ -637,7 +637,7 @@ footer {
   ─────────────
   Mozart's original: 176 pre-composed measures; 2d6 selects one per slot.
   This system: 5 axes × 11 values each; prose assembled from phrase pools.
-  The Clarke counter tracks how many of 11^16 ≈ 116 quadrillion waltzes
+  The Clark counter tracks how many of 11^16 ≈ 116 quadrillion waltzes
   have been generated in this session. Humanity will not exhaust the table.
 
   Description generation:
@@ -925,7 +925,7 @@ const SLOT_CLOSINGS = {
   G: ['The exhale. Not resolution — the breath before the door opens.',
       'The release is partial, which is honest. Full release waits for H.'],
   H_resolve: ['A star goes out somewhere in the distance, quiet as a page turning. This waltz has been spoken. It will not be spoken again.',
-              'Full resolution. The name is complete. Mozart is satisfied. The Clarke counter increments.'],
+              'Full resolution. The name is complete. Mozart is satisfied. The Clark counter increments.'],
   H_loop:    ['The cadence does not close — it indicts. The chord returns to the beginning the way systemic problems do.',
               'The universe, apparently, continues. The enumeration is not finished. It was never going to be finished.'],
 };
@@ -1320,7 +1320,7 @@ function checkAndAssemble() {
   const allDone = SLOT_KEYS.every(k => state.descriptions[k]);
   if (!allDone) return;
 
-  // Increment Clarke counter
+  // Increment Clark counter
   state.waltzeCount++;
   updateClarkeCounter();
 
